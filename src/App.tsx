@@ -176,9 +176,9 @@ export default function App() {
         <div className="bg-slate-900 border border-slate-850 p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
           
           {/* Category selector */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 shrink-0">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 shrink-0 max-w-full">
             <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider hidden lg:inline">Filtrar por:</span>
-            <div className="flex gap-1">
+            <div className="flex gap-1 flex-wrap">
               {categories.map((category) => (
                 <button
                   key={category}
